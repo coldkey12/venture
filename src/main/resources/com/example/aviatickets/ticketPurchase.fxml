@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #152c41;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.aviatickets.TicketPurchaseController">
+   <children>
+      <ImageView fitHeight="118.0" fitWidth="77.0" layoutX="262.0" layoutY="35.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="238.0" layoutY="123.0" text="Ticket purchase" textFill="WHITE">
+         <font>
+            <Font name="Apple SD Gothic Neo Regular" size="19.0" />
+         </font>
+      </Label>
+      <TextField fx:id="passportId" layoutX="220.0" layoutY="157.0" promptText="Passport id" style="-fx-background-color: #ffffff;" />
+      <ChoiceBox fx:id="ticketClassChoice" layoutX="220.0" layoutY="200.0" prefHeight="26.0" prefWidth="160.0" style="-fx-background-color: #ffffff;" />
+      <Label fx:id="infoLabel" layoutX="23.0" layoutY="244.0" text="City - City at Wed 7 jun 17:00 price for economy [000]; price for business [000]" textAlignment="CENTER" textFill="WHITE" />
+      <Button fx:id="confirmationButton" layoutX="217.0" layoutY="279.0" mnemonicParsing="false" style="-fx-background-color: #ffffff;" text="Confirmation of transaction" />
+      <Label fx:id="backLabel" layoutX="21.0" layoutY="14.0" text="Back" textFill="WHITE" />
+      <Label fx:id="ticketsCounter" layoutX="252.0" layoutY="352.0" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Apple SD Gothic Neo Regular" size="13.0" />
+         </font>
+      </Label>
+      <Button fx:id="cancelTickets" layoutX="253.0" layoutY="314.0" mnemonicParsing="false" style="-fx-background-color: #ffffff;" text="Cancel tickets" />
+   </children>
+</AnchorPane>

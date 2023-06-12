@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.aviatickets.CashierController">
+   <children>
+      <AnchorPane prefHeight="110.0" prefWidth="600.0" style="-fx-background-color: #152c41;">
+         <children>
+            <Label layoutX="23.0" layoutY="38.0" text="Cashier:" textFill="WHITE">
+               <font>
+                  <Font name="Apple SD Gothic Neo Regular" size="26.0" />
+               </font>
+            </Label>
+            <Label fx:id="cashierUsername" layoutX="111.0" layoutY="38.0" textFill="#f8f8f8">
+               <font>
+                  <Font size="26.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="63.0" fitWidth="91.0" layoutX="269.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@img.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="backLabel" layoutX="12.0" layoutY="12.0" text="back" textFill="WHITE">
+               <font>
+                  <Font name="Apple SD Gothic Neo Regular" size="13.0" />
+               </font>
+            </Label>
+            <Label fx:id="addTicket" layoutX="453.0" layoutY="47.0" text="Add ticket" textFill="WHITE">
+               <font>
+                  <Font name="Apple SD Gothic Neo Regular" size="13.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <ListView fx:id="allTicketsList" layoutX="24.0" layoutY="151.0" prefHeight="200.0" prefWidth="221.0" />
+      <Label layoutX="24.0" layoutY="124.0" text="Tickets" textFill="#152c41" />
+      <ChoiceBox fx:id="paramChoice" layoutX="259.0" layoutY="151.0" prefWidth="150.0" style="-fx-background-color: #ffffff;" />
+      <Label layoutX="259.0" layoutY="124.0" text="Parametr" textFill="#152c41" />
+      <TextField fx:id="paramTextField" layoutX="259.0" layoutY="188.0" prefHeight="26.0" prefWidth="150.0" style="-fx-background-color: #ffffff;" />
+      <Button fx:id="applyButton" layoutX="259.0" layoutY="226.0" mnemonicParsing="false" style="-fx-background-color: #ffffff; -fx-background-radius: 7;" text="Apply" textFill="#152c41" />
+      <ListView fx:id="CustomersRequestsList" layoutX="419.0" layoutY="152.0" prefHeight="200.0" prefWidth="160.0" />
+      <Label layoutX="419.0" layoutY="124.0" text="Customer's Requests" textFill="#152c41" />
+      <Button layoutX="24.0" layoutY="352.0" mnemonicParsing="false" style="-fx-background-color: #b54143; -fx-background-radius: 7;" text="Delete" textFill="WHITE" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.aviatickets.AdminPlanesController">
+   <children>
+      <AnchorPane layoutY="-1.0" prefHeight="108.0" prefWidth="600.0" style="-fx-background-color: #152c41;">
+         <children>
+            <ImageView fitHeight="63.0" fitWidth="91.0" layoutX="269.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@img.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="14.0" layoutY="36.0" text="Admin:" textFill="WHITE">
+               <font>
+                  <Font name="Apple SD Gothic Neo Regular" size="29.0" />
+               </font>
+            </Label>
+            <Label fx:id="adminUsernameLabel" layoutX="111.0" layoutY="36.0" textFill="WHITE">
+               <font>
+                  <Font name="Apple SD Gothic Neo Regular" size="29.0" />
+               </font>
+            </Label>
+            <Label layoutX="435.0" layoutY="40.0" text="Planes" textFill="WHITE">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label fx:id="citiesButton" layoutX="519.0" layoutY="47.0" text="Cities" textFill="WHITE" />
+            <Label fx:id="flightsButton" layoutX="379.0" layoutY="47.0" text="Flights" textFill="WHITE" />
+            <Label fx:id="backLabel" layoutX="14.0" layoutY="6.0" text="back" textFill="WHITE">
+               <font>
+                  <Font name="Apple SD Gothic Neo Regular" size="13.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <ListView fx:id="allPlanesList" layoutX="14.0" layoutY="141.0" prefHeight="200.0" prefWidth="221.0" />
+      <TextField fx:id="aircraftNameField" layoutX="253.0" layoutY="141.0" promptText="Aircraft name" style="-fx-background-color: #ffffff; -fx-background-radius: 7;" />
+      <TextField fx:id="businessCapacityField" layoutX="253.0" layoutY="206.0" promptText="Business capacity" style="-fx-background-color: #ffffff; -fx-background-radius: 7;" />
+      <TextField fx:id="economyCapacityField" layoutX="253.0" layoutY="241.0" promptText="Economy capacity" style="-fx-background-color: #ffffff; -fx-background-radius: 7;" />
+      <TextField fx:id="modelField" layoutX="253.0" layoutY="174.0" promptText="Model" style="-fx-background-color: #ffffff; -fx-background-radius: 7;" />
+      <Button fx:id="addButton" layoutX="306.0" layoutY="341.0" mnemonicParsing="false" style="-fx-background-color: #ffffff; -fx-background-radius: 7;" text="Add " textFill="#152c41" />
+      <Button fx:id="deleteButton" layoutX="14.0" layoutY="341.0" mnemonicParsing="false" style="-fx-background-color: #ffffff; -fx-background-radius: 7;" text="Make inactive" textFill="#152c41" />
+      <ListView fx:id="CrewRequestsList" layoutX="426.0" layoutY="141.0" prefHeight="200.0" prefWidth="160.0" />
+      <Label layoutX="14.0" layoutY="117.0" text="Planes " textFill="#152c41" />
+      <Label layoutX="253.0" layoutY="117.0" text="Add Plane" textFill="#152c41" />
+      <Label layoutX="426.0" layoutY="117.0" text="Crew requests" textFill="#152c41" />
+      <Button fx:id="reviveButton" layoutX="107.0" layoutY="342.0" mnemonicParsing="false" style="-fx-background-color: #ffffff; -fx-background-radius: 7;" text="Revive" textFill="#152c41">
+         <font>
+            <Font name="Apple SD Gothic Neo Regular" size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="killPlane" layoutX="173.0" layoutY="342.0" mnemonicParsing="false" style="-fx-background-color: #b54143;" text="KILL IT" textFill="WHITE" />
+   </children>
+</AnchorPane>
