@@ -2,14 +2,14 @@
 Aviatickets desktop application
 
 # Features
-+Features online flight tickets purchasing service.
-+Interaction with clients through admin/cashier managment panels.
-+Clients can buy tickets using passport id.
+- Features online flight tickets purchasing service.
+- Interaction with clients through admin/cashier managment panels.
+- Clients can buy tickets using passport id.
 
 # Config
-Host: localhost
-Port: 3306
-Driver: MySql
+- Host: localhost
+- Port: 3306
+- Driver: MySql
 
 # Instruments
 Instruments used: 
